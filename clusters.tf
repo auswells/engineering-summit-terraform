@@ -10,7 +10,7 @@ module "aw_es_argocd" {
   gcp_zone = "us-east1-b"
   gcp_machine_type = "n2-standard-4"
   autoscaling_group_min_size = 1
-  autoscaling_group_max_size = 4
+  autoscaling_group_max_size = 3
   preemptible_nodes = false
   actian_networks = [
     { cidr_block = "149.20.195.26/32", display_name = "Dallas Cato VPN IP" }
